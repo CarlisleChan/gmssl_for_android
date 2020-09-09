@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:scrollbars="vertical"
+        android:text="顯示屏" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_aes_enc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aes加密" />
+
+        <Button
+            android:id="@+id/btn_aes_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aes解密" />
+
+        <Button
+            android:id="@+id/btn_sha1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHA1" />
+
+        <Button
+            android:id="@+id/btn_sm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SM3" />
+
+        <Button
+            android:id="@+id/btn_sm4_enc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SM4加密" />
+
+        <Button
+            android:id="@+id/btn_sm4_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SM4解密" />
+
+        <Button
+            android:id="@+id/btn_sm2_enc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sm2加密" />
+
+        <Button
+            android:id="@+id/btn_sm2_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sm2解密" />
+
+        <Button
+            android:id="@+id/btn_sm2_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sm2簽名" />
+
+        <Button
+            android:id="@+id/btn_sm2_verify_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sm2驗簽" />
+
+    </GridLayout>
+
+</LinearLayout>
