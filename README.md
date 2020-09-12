@@ -10,6 +10,7 @@
 
 ```
 cd tools
+# 记得修改 build-android-common 中 ANDROID_HOME 和 ANDROID_NDK_ROOT
 ./build-android-gmssl.sh
 ```
 

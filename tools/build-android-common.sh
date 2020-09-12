@@ -22,7 +22,7 @@ export ABIS=("armeabi-v7a" "arm64-v8a" "x86" "x86_64")
 export ABI_TRIPLES=("arm-linux-androideabi" "aarch64-linux-android" "i686-linux-android" "x86_64-linux-android")
 export ANDROID_API=21
 export ANDROID_HOME=${ANDROID_SDK}
-export ANDROID_NDK_ROOT=${ANDROID_HOME}/ndk/21.3.6528147
+export ANDROID_NDK_ROOT=${ANDROID_NDK}
 
 # for test
 # export ARCHS=("x86_64")
