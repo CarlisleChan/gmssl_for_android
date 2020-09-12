@@ -31,7 +31,7 @@ function get_cpu_count() {
 }
 
 function init_log_color() {
-    if test -t 1; then
+    if test -t 1 && which tput >/dev/null 2>&1; then
         ncolors=$(tput colors)
         if test -n "$ncolors" && test $ncolors -ge 8; then
             bold_color=$(tput bold)
@@ -46,15 +46,18 @@ function init_log_color() {
 }
 
 function log_info() {
-    echo "$warn_color$@$reset_color"
+    # echo "$warn_color$@$reset_color"
+    echo "$@"
 }
 
 function log_warning() {
-    echo "$warn_color$bold_color$@$reset_color"
+    # echo "$warn_color$bold_color$@$reset_color"
+    echo "$@"
 }
 
 function log_error() {
-    echo "$error_color$bold_color$@$reset_color"
+    # echo "$error_color$bold_color$@$reset_color"
+    echo "$@"
 }
 
 # init_log_color
